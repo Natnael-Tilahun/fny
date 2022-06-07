@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="project-dashboard-style.css"
+    />
+    <script src="main.js"></script>
+    <title>Document</title>
+    <style>
+      .dropdown-toggle:after {
+        content: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-auto bg-dark sticky-top">
+          <div
+            class="
+              d-flex
+              flex-sm-column flex-row flex-nowrap
+              bg-dark
+              align-items-center
+              sticky-top
+            "
+          >
+            <a
+              href="../index.html"
+              class="d-block p-3 link-dark text-decoration-none border-bottom"
+              title=""
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              data-bs-original-title="Company Logo/Home"
+            >
+              <img
+                src="../images/log (1).png"
+                alt="hugenerd"
+                width="70"
+                height="70"
+                class="rounded-circle"
+              />
+            </a>
+            <ul
+              class="
+                nav nav-pills nav-flush
+                flex-sm-column flex-row flex-nowrap
+                mb-auto
+                mx-auto
+                text-center
+                justify-content-between
+                w-100
+                px-3
+                align-items-center
+              "
+            >
+              <li class="nav-item">
+                <a
+                  href="project-home.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Home"
+                >
+                  <i class="bi-house fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Project Dashboard"
+                >
+                  <i class="bi-speedometer2 fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="project-schedule.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Schedule Management"
+                >
+                  <i class="bi bi-calendar2-check-fill fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="project-employee.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Employee Management"
+                >
+                  <i class="bi bi-person-lines-fill fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="project-material.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Material Management"
+                >
+                  <i class="bi-tools fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="project-budget.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Budget Management"
+                >
+                  <i class="bi bi-wallet-fill fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="project-document.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Document Management"
+                >
+                  <i class="bi-files fs-2"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="dropdown">
+              <a
+                href="#"
+                class="
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  p-3
+                  link-light
+                  text-decoration-none
+                  dropdown-toggle
+                "
+                id="profile"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="https://github.com/mdo.png"
+                  alt="hugenerd"
+                  width="50"
+                  height="50"
+                  class="rounded-circle"
+                  data-bs-toggle="tooltip"
+                  data-bs-original-title="Profile Details"
+                  data-bs-placement="right"
+                />
+              </a>
+              <ul
+                class="dropdown-menu text-small shadow bg-light"
+                aria-labelledby="profile"
+              >
+                <li>
+                  <a class="dropdown-item text-dark" href="#"
+                    ><i class="bi-file-plus-fill pe-3"></i>New project</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-dark" href="#"
+                    ><i class="bi-gear pe-3"></i>Settings</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-dark" href="#"
+                    ><i class="bi-person-square pe-3"></i>Profile</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider text-dark" />
+                </li>
+                <li>
+                  <a class="dropdown-item text-dark" href="login.html"
+                    ><i class="bi-box-arrow-in-left pe-3"></i>Sign out</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm p-3 min-vh-100">
+          <!-- content -->
+          <h4 class="text-primary fw-bolder font-monospace text-capitalize">
+            Please Insert Project detail Information and Create Project
+          </h4>
+          <hr />
+          <section class="bg-light shadow">
+            <button class="btn btn-primary mx-5 mt-3">
+              <i class="bi-plus"> </i>Create Custom project
+            </button>
+            <form action="" class="row p-5">
+              <!-- <div class=" col-lg-6 col-md-6 col-xs-12  mb-3 ">
+                            <label for="size-select" class="form-label text-dark">Select Construction Space Size</label>
+                            <select class="form-select" id="size-select" required>
+                                <option selected disabled value="">Construction Size *</option>
+                                <option>50 Square meter</option>
+                                <option value="">60 Square meter</option>
+                                <option value="">72 Square meter</option>
+                                <option value="">100 Square meter</option>
+                                <option value="">150 Square meter</option>
+                                <option value="">175 Square meter</option>
+                                <option value="">200 Square meter</option>
+                                <option value="">250 Square meter</option>
+                                <option value="">275 Square meter</option>
+                                <option value="">300 Square meter </option>
+                                <option value="">325 Square meter </option>
+                                <option value="">350 Square meter </option>
+                                <option value="">375 Square meter </option>
+                                <option value="">400 Square meter </option>
+                                <option value="">425 Square meter </option>
+                                <option value="">450 Square meter </option>
+                                <option value="">500 Square meter </option>
+                                <option value="">550 Square meter </option>
+                                <option value="">600 Square meter </option>
+                                <option value="">700 Square meter </option>
+                                <option value="">800 Square meter </option>
+                                <option value="">900 Square meter </option>
+                                <option value="">1000 Square meter </option>
+                                <option value="">Other</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid Construction Size.
+                            </div>
+                        </div> -->
+
+              <div class="col-md-6 col-xs-12 mb-3">
+                <label for="buildingsize-input" class="form-label text-dark"
+                  >Buliding Size</label
+                >
+                <input
+                  type="number"
+                  name=""
+                  id="buildingsize-input"
+                  class="form-control"
+                  placeholder="Your building size in square meter*"
+                  required
+                />
+                <div class="valid-feedback">
+                  Please insert your Building Size in square meter.
+                </div>
+              </div>
+              <div class="col-md-6 col-xs-12 mb-3">
+                <label for="location-input" class="form-label text-dark b"
+                  >Location</label
+                >
+                <input
+                  type="text"
+                  name=""
+                  id="location-input"
+                  class="form-control"
+                  placeholder="Location"
+                />
+                <div class="valid-feedback">
+                  Please insert your correct location.
+                </div>
+              </div>
+              <div class="col-md-6 col-xs-12 mb-3">
+                <label for="buildingradius-input" class="form-label text-dark"
+                  >Building Radius</label
+                >
+                <input
+                  type=""
+                  name=""
+                  id="buildingradius-input"
+                  class="form-control"
+                  placeholder="Your building radius in square meter*"
+                  required
+                />
+                <div class="valid-feedback">
+                  Please insert your building radius.
+                </div>
+              </div>
+              <div class="col-md-6 col-xs-12 mb-3">
+                <label for="budget-input" class="form-label text-dark"
+                  >Budget</label
+                >
+                <input
+                  type=""
+                  name=""
+                  id="budget-input"
+                  class="form-control"
+                  placeholder="Your expected Budget *"
+                  required
+                />
+                <div class="valid-feedback">Please insert your budget.</div>
+              </div>
+              <div class="col-md-6 col-xs-12 mb-3">
+                <label for="timeline-input" class="form-label text-dark"
+                  >Timeline</label
+                >
+                <input
+                  type=""
+                  name=""
+                  id="timeline-input"
+                  class="form-control"
+                  placeholder="Your expected timeline still the end*"
+                  required
+                />
+                <div class="valid-feedback">Please insert your timeline.</div>
+              </div>
+              <div class="col-md-6 col-xs-12 mb-3">
+                <label for="employee-input" class="form-label text-dark"
+                  >Employee Number</label
+                >
+                <input
+                  type=""
+                  name=""
+                  id="employee-input"
+                  class="form-control"
+                  placeholder="Your expected number of employees still the end*"
+                  required
+                />
+                <div class="valid-feedback">Please insert your employee.</div>
+              </div>
+              <div class="col-md-6 col-xs-12 mb-3">
+                <label for="buildingfunction-input" class="form-label text-dark"
+                  >Building Function</label
+                >
+                <input
+                  type=""
+                  name=""
+                  id="buildingfunction-input"
+                  class="form-control"
+                  placeholder="Your building function*"
+                  required
+                />
+                <div class="valid-feedback">
+                  Please insert your building function.
+                </div>
+              </div>
+              <div class="col-md-6 col-xs-12 mb-3">
+                <label for="soiltype-input" class="form-label text-dark"
+                  >Soil Type</label
+                >
+                <input
+                  type=""
+                  name=""
+                  id="soiltype-input"
+                  class="form-control"
+                  placeholder="Your soil type*"
+                  required
+                />
+                <div class="valid-feedback">Please insert your soiltype.</div>
+              </div>
+
+              <div class="col-12 mb-3 text-center">
+                <a
+                  class="btn btn-primary"
+                  href="project-dashboard.html"
+                  type="submit"
+                  role="button"
+                  >Create Project
+                </a>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
+</html>

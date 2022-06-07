@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <!-- Morris Chart Styles-->
+    <link href="../assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="../assets/css/font-awesome.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="project-dashboard-style.css"
+    />
+    <script src="main.js"></script>
+    <title>Document</title>
+    <style>
+      .dropdown-toggle:after {
+        content: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-auto bg-dark sticky-top">
+          <div
+            class="
+              d-flex
+              flex-sm-column flex-row flex-nowrap
+              bg-dark
+              align-items-center
+              sticky-top
+            "
+          >
+            <a
+              href="../index.html"
+              class="d-block p-3 link-dark text-decoration-none border-bottom"
+              title=""
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              data-bs-original-title="Company Logo/Home"
+            >
+              <img
+                src="../images/log (1).png"
+                alt="hugenerd"
+                width="70"
+                height="70"
+                class="rounded-circle"
+              />
+            </a>
+            <ul
+              class="
+                nav nav-pills nav-flush
+                flex-sm-column flex-row flex-nowrap
+                mb-auto
+                mx-auto
+                text-center
+                justify-content-between
+                w-100
+                px-3
+                align-items-center
+              "
+            >
+              <li class="nav-item">
+                <a
+                  href="project-home.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Home"
+                >
+                  <i class="bi-house fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Project Dashboard"
+                >
+                  <i class="bi-speedometer2 fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="project-schedule.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Schedule Management"
+                >
+                  <i class="bi bi-calendar2-check-fill fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="project-employee.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Employee Management"
+                >
+                  <i class="bi bi-person-lines-fill fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="project-material.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Material Management"
+                >
+                  <i class="bi-tools fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="project-budget.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Budget Management"
+                >
+                  <i class="bi bi-wallet-fill fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="project-document.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Document Management"
+                >
+                  <i class="bi-files fs-2"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="dropdown">
+              <a
+                href="#"
+                class="
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  p-3
+                  link-light
+                  text-decoration-none
+                  dropdown-toggle
+                "
+                id="profile"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="../images/yirgs.jpg"
+                  alt="hugenerd"
+                  width="50"
+                  height="50"
+                  class="rounded-circle"
+                  data-bs-toggle="tooltip"
+                  data-bs-original-title="Profile Details"
+                  data-bs-placement="right"
+                /><span class="badge bg-danger mb-5">2</span>
+              </a>
+              <ul
+                class="dropdown-menu text-small shadow bg-light"
+                aria-labelledby="profile"
+              >
+                <li>
+                  <a class="dropdown-item text-dark" href="#"
+                    ><i class="bi-file-plus-fill pe-3"></i>New project</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-dark" href="#"
+                    ><i class="bi-bell-fill pe-3"></i>Notifications</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-dark" href="#"
+                    ><i class="bi-gear pe-3"></i>Settings</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-dark" href="#"
+                    ><i class="bi-person-square pe-3"></i>Profile</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider text-dark" />
+                </li>
+                <li>
+                  <a class="dropdown-item text-dark" href="login.html"
+                    ><i class="bi-box-arrow-in-left pe-3"></i>Sign out</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm p-3 min-vh-100">
+          <!-- content -->
+          <h2 class="text-primary">
+            Dashboard
+            <small class="text-secondary">Summary of your Project</small>
+          </h2>
+          <hr />
+          <section class="container bg-light shadow p-3">
+            <div id="page-wrapper">
+              <div id="page-inner">
+                <div class="row">
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="card card-secondary text-center boder">
+                      <div class="card-body">
+                        <!-- <i class="bi bi-calender fs-1 p-5"></i> -->
+                        <i class="bi bi-calendar2-month fs-1 p-5"></i>
+                        <h3>2 Year</h3>
+                      </div>
+                      <div class="card-footer bg-secondary text-light">
+                        Total Timeline
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="card card-primary text-center boder">
+                      <div class="card-body">
+                        <i class="bi bi-wallet fs-1 p-5"></i>
+                        <h3>15,000,000 Birr</h3>
+                      </div>
+                      <div class="card-footer bg-danger text-light">
+                        Total Budget
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="card card-success text-center boder">
+                      <div class="card-body">
+                        <i class="bi bi-people fs-1 p-5"></i>
+                        <h3>200</h3>
+                      </div>
+                      <div class="card-footer bg-success text-light">
+                        No. of Employees
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div
+                      class="card card-primary text-center boder bg-color-green"
+                    >
+                      <div class="card-body">
+                        <i class="bi bi-bar-chart fs-1 p-5"></i>
+                        <h3>500</h3>
+                      </div>
+                      <div class="card-footer bg-primary text-light">
+                        Total Materials
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row py-3 justify-content-center">
+                  <div class="col-md-8 col-sm-12 col-xs-12 col-lg-6">
+                    <canvas id="myChart" width="200" height="200"></canvas>
+                  </div>
+                </div>
+                <!-- /. ROW  -->
+                <!-- <footer>
+                                <p>
+                                    All right reserved. Template by:
+                                    <a href="http://webthemez.com">WebThemez</a>
+                                </p>
+                            </footer> -->
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+      const data = {
+        labels: [
+          "Completed Timeline",
+          "Expected Timeline",
+          "Budget Spent ",
+          "Expetcted Budget",
+          "Current No. of Employee",
+          "Expected No. of Employee",
+          "Used Material",
+          "Expected Material Usage",
+        ],
+        datasets: [
+          {
+            backgroundColor: ["#AAA", "#777"],
+            data: [21, 79],
+          },
+          {
+            backgroundColor: ["hsl(0, 100%, 60%)", "hsl(0, 100%, 35%)"],
+            data: [33, 67],
+          },
+          {
+            backgroundColor: ["hsl(100, 100%, 60%)", "hsl(100, 100%, 35%)"],
+            data: [20, 80],
+          },
+          {
+            backgroundColor: ["hsl(180, 100%, 60%)", "hsl(180, 100%, 35%)"],
+            data: [10, 90],
+          },
+        ],
+      };
+      const options = {
+        responsive: true,
+        plugins: {
+          legend: {
+            labels: {
+              generateLabels: function (chart) {
+                // Get the default label list
+                const original =
+                  Chart.overrides.pie.plugins.legend.labels.generateLabels;
+                const labelsOriginal = original.call(this, chart);
+
+                // Build an array of colors used in the datasets of the chart
+                var datasetColors = chart.data.datasets.map(function (e) {
+                  return e.backgroundColor;
+                });
+                datasetColors = datasetColors.flat();
+
+                // Modify the color and hide state of each label
+                labelsOriginal.forEach((label) => {
+                  // There are twice as many labels as there are datasets. This converts the label index into the corresponding dataset index
+                  label.datasetIndex = (label.index - (label.index % 2)) / 2;
+
+                  // The hidden state must match the dataset's hidden state
+                  label.hidden = !chart.isDatasetVisible(label.datasetIndex);
+
+                  // Change the color to match the dataset
+                  label.fillStyle = datasetColors[label.index];
+                });
+
+                return labelsOriginal;
+              },
+            },
+            onClick: function (mouseEvent, legendItem, legend) {
+              // toggle the visibility of the dataset from what it currently is
+              legend.chart.getDatasetMeta(legendItem.datasetIndex).hidden =
+                legend.chart.isDatasetVisible(legendItem.datasetIndex);
+              legend.chart.update();
+            },
+          },
+        },
+      };
+
+      var ctx = document.getElementById("myChart");
+      var myChart = new Chart(ctx, {
+        type: "pie",
+        data: data,
+        options: options,
+        tooltip: {
+          callbacks: {
+            label: function (context) {
+              const labelIndex = context.datasetIndex * 2 + context.dataIndex;
+              return (
+                context.chart.data.labels[labelIndex] +
+                ": " +
+                context.formattedValue
+              );
+            },
+          },
+        },
+        count: 5,
+        min: 0,
+        max: 100,
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+    <!-- jQuery Js -->
+    <script src="../assets/js/jquery-1.10.2.js"></script>
+    <!-- Metis Menu Js -->
+    <script src="../assets/js/jquery.metisMenu.js"></script>
+
+    <!-- Morris Chart Js -->
+    <script src="../assets/js/morris/morris-0.4.3.min.css"></script>
+    <script src="../assets/js/morris/morris.js"></script>
+    <!-- Custom Js -->
+    <script src="../assets/js/custom-scripts.js"></script>
+  </body>
+</html>

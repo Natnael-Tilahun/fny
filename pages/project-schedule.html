@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="project-dashboard-style.css"
+    />
+    <script src="main.js"></script>
+    <title>Document</title>
+    <style>
+      .dropdown-toggle:after {
+        content: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-auto bg-dark sticky-top">
+          <div
+            class="
+              d-flex
+              flex-sm-column flex-row flex-nowrap
+              bg-dark
+              align-items-center
+              sticky-top
+            "
+          >
+            <a
+              href="../index.html"
+              class="d-block p-3 link-dark text-decoration-none border-bottom"
+              title=""
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              data-bs-original-title="Company Logo/Home"
+            >
+              <img
+                src="../images/log (1).png"
+                alt="hugenerd"
+                width="70"
+                height="70"
+                class="rounded-circle"
+              />
+            </a>
+            <ul
+              class="
+                nav nav-pills nav-flush
+                flex-sm-column flex-row flex-nowrap
+                mb-auto
+                mx-auto
+                text-center
+                justify-content-between
+                w-100
+                px-3
+                align-items-center
+              "
+            >
+              <li class="nav-item">
+                <a
+                  href="project-home.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="[roject Home"
+                >
+                  <i class="bi-house fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="project-dashboard.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Project Dashboard"
+                >
+                  <i class="bi-speedometer2 fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Schedule Management"
+                >
+                  <i class="bi bi-calendar2-check-fill fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="project-employee.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Employee Management"
+                >
+                  <i class="bi bi-person-lines-fill fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="project-material.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Material Management"
+                >
+                  <i class="bi-tools fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="project-budget.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Budget Management"
+                >
+                  <i class="bi bi-wallet-fill fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="project-document.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Document Management"
+                >
+                  <i class="bi-files fs-2"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="dropdown">
+              <a
+                href="#"
+                class="
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  p-3
+                  link-light
+                  text-decoration-none
+                  dropdown-toggle
+                "
+                id="profile"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="../images/yirgs.jpg"
+                  alt="hugenerd"
+                  width="50"
+                  height="50"
+                  class="rounded-circle"
+                  data-bs-toggle="tooltip"
+                  data-bs-original-title="Profile Details"
+                  data-bs-placement="right"
+                /><span class="badge bg-danger mb-5">2</span>
+              </a>
+              <ul
+                class="dropdown-menu text-small shadow bg-light"
+                aria-labelledby="profile"
+              >
+                <li>
+                  <a class="dropdown-item text-dark" href="#"
+                    ><i class="bi-file-plus-fill pe-3"></i>New project...</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-dark" href="#"
+                    ><i class="bi-bell-fill pe-3"></i>Notifications</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-dark" href="#"
+                    ><i class="bi-gear pe-3"></i>Settings</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-dark" href="#"
+                    ><i class="bi-person-square pe-3"></i>Profile</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider text-dark" />
+                </li>
+                <li>
+                  <a class="dropdown-item text-dark" href="login.html"
+                    ><i class="bi-box-arrow-in-left pe-3"></i>Sign out</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm p-3 min-vh-100">
+          <!-- content -->
+          <h4 class="text-primary">Schedule Management</h4>
+          <hr />
+
+          <div class="row p-lg-5">
+            <button class="btn btn-primary mb-3 col-lg-3 mx-3 py-2">
+              <i class="bi-plus"> </i>Insert New
+            </button>
+            <i
+              class="
+                bi bi-printer-fill
+                fs-1
+                col-3
+                mt-5
+                mx-3
+                position-absolute
+                top-0
+                end-0
+                p-5
+                text-dark
+                btn btn-lg
+              "
+            ></i>
+            <i
+              class="
+                bi bi-share-fill
+                fs-1
+                col-2
+                mt-5
+                position-absolute
+                top-0
+                end-0
+                pt-5
+                text-primary
+                btn btn-lg
+                dropdown-toggle
+              "
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              id="share"
+            ></i>
+            <div class="dropdown-menu col-3 p-2" aria-labelledby="share">
+              <a href="" class="fs-2 mx-2 text-secondary"
+                ><i class="bi-envelope-fill"></i
+              ></a>
+              <a href="" class="fs-2 mx-2 text-secondary"
+                ><i class="bi-facebook"></i
+              ></a>
+              <a href="" class="fs-2 mx-2 text-secondary"
+                ><i class="bi-linkedin"></i
+              ></a>
+              <a href="" class="fs-2 mx-2 text-secondary"
+                ><i class="bi-telegram"></i
+              ></a>
+              <a href="" class="fs-2 mx-2 text-secondary"
+                ><i class="bi-whatsapp"></i
+              ></a>
+              <a href="" class="fs-2 ms-2 text-secondary"
+                ><i class="bi-person-plus"></i
+              ></a>
+            </div>
+            <div class="col-md-8 col-sm-12 col-xs-12 col-lg-12">
+              <div class="card card-default">
+                <div class="card-header">
+                  <h4 class="pb-2">Project Schedule Information</h4>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table
+                      class="table table-striped table-bordered table-hover"
+                    >
+                      <thead>
+                        <tr>
+                          <th>No.</th>
+                          <th>Job Name</th>
+                          <th>Job Description</th>
+                          <th>NO. of Employees</th>
+                          <th>Duration</th>
+                          <th>Action</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Prepare Construction Site and Pour Foundation</td>
+                          <td>
+                            <li>Apply for and Acquire Permits</li>
+                            <li>Construction Crew Levels Site</li>
+                            <li>
+                              Puts Up Wooden Forms for the Temporary Foundation
+                            </li>
+                            <li>Footings Are Installed</li>
+                          </td>
+                          <td>15</td>
+                          <td>45 Days</td>
+                          <td class="">
+                            <a href="" class="pe-3 text-warning fs-4"
+                              ><i class="bi bi-pencil-square"></i
+                            ></a>
+                            <a href="" class="pe-3 text-danger fs-4"
+                              ><i class="bi bi-trash-fill"></i
+                            ></a>
+                          </td>
+                          <td class="">
+                            <button class="btn btn-danger btn-sm rounded-pill">
+                              Completed
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Complete Rough Framing</td>
+                          <td>
+                            <li>
+                              Floor System, Walls, Roof Systems Are Completed
+                            </li>
+                            <li>
+                              Sheathing Applied to Exterior Walls, Covered With
+                              Protective Wrap
+                            </li>
+                          </td>
+                          <td>25</td>
+                          <td>90 Days</td>
+                          <td class="">
+                            <a href="" class="pe-3 text-warning fs-4"
+                              ><i class="bi bi-pencil-square"></i
+                            ></a>
+                            <a href="" class="pe-3 text-danger fs-4"
+                              ><i class="bi bi-trash-fill"></i
+                            ></a>
+                          </td>
+                          <td class="">
+                            <button class="btn btn-danger btn-sm rounded-pill">
+                              Completed
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Complete Rough Plumbing, Electrical HVAC</td>
+                          <td>
+                            The Following Are Installed:
+                            <li>Pipes and Wires</li>
+                            <li>Sewer Lines and Vents</li>
+                            <li>Water Supply Lines</li>
+                            <li>Bathtubs,Shower Units</li>
+                            <li>Ductwork for HVAC System</li>
+                            <li>HVAC Vent Pipes</li>
+                          </td>
+                          <td>20</td>
+                          <td>65 Days</td>
+                          <td class="">
+                            <a href="" class="pe-3 text-warning fs-4"
+                              ><i class="bi bi-pencil-square"></i
+                            ></a>
+                            <a href="" class="pe-3 text-danger fs-4"
+                              ><i class="bi bi-trash-fill"></i
+                            ></a>
+                          </td>
+                          <td class="">
+                            <button class="btn btn-success btn-sm rounded-pill">
+                              Loading
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Install Insulation</td>
+                          <td>
+                            Common Types of Insulation in New Homes
+
+                            <li>Fiberglass</li>
+                            <li>Cellulose</li>
+                            <li>Foam Mineral Wool</li>
+                            <li>Concrete Blocks</li>
+                            <li>Insulation Concrete Forms</li>
+                            <li>Spray Foam</li>
+                            <li>Structural Insulated Panels</li>
+                            <li>Foam Board or Ridged Foam</li>
+                          </td>
+                          <td>15</td>
+                          <td>50 Days</td>
+                          <td class="">
+                            <a href="" class="pe-3 text-warning fs-4"
+                              ><i class="bi bi-pencil-square"></i
+                            ></a>
+                            <a href="" class="pe-3 text-danger fs-4"
+                              ><i class="bi bi-trash-fill"></i
+                            ></a>
+                          </td>
+                          <td class="">
+                            <button class="btn btn-warning btn-sm rounded-pill">
+                              Pending
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>
+                            Complete Drywall and Interior Fixtures, Start
+                            Exterior Finishes
+                          </td>
+                          <td>
+                            <li>Drywall is Hung and Taped</li>
+                            <li>Texturing is Completed</li>
+                            <li>Primary Coat of Paint is Applied</li>
+                            <li>
+                              Exterior Finishes (Brick, Stucco, Stone) Are
+                              Installed
+                            </li>
+                          </td>
+                          <td>20</td>
+                          <td>50 Days</td>
+                          <td class="">
+                            <a href="" class="pe-3 text-warning fs-4"
+                              ><i class="bi bi-pencil-square"></i
+                            ></a>
+                            <a href="" class="pe-3 text-danger fs-4"
+                              ><i class="bi bi-trash-fill"></i
+                            ></a>
+                          </td>
+                          <td class="">
+                            <button class="btn btn-warning btn-sm rounded-pill">
+                              Pending
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>
+                            Finish Interior Trim, Install Exterior Walkways and
+                            Driveway
+                          </td>
+                          <td>
+                            <li>
+                              Doors, Window Sills, Decorative Trim Installed
+                            </li>
+                            <li>
+                              Cabinets, Vanities, Fireplace Mantles Installed
+                            </li>
+                            <li>Final Coat of Paint</li>
+                          </td>
+                          <td>20</td>
+                          <td>40 Days</td>
+                          <td class="">
+                            <a href="" class="pe-3 text-warning fs-4"
+                              ><i class="bi bi-pencil-square"></i
+                            ></a>
+                            <a href="" class="pe-3 text-danger fs-4"
+                              ><i class="bi bi-trash-fill"></i
+                            ></a>
+                          </td>
+                          <td class="">
+                            <button class="btn btn-warning btn-sm rounded-pill">
+                              Pending
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>
+                            Install Hard Surface Flooring, Countertops; Complete
+                            Exterior Grading
+                          </td>
+                          <td>
+                            Ceramic tile, vinyl and wood flooring are installed
+                            as well as countertops. Exterior finish grading is
+                            completed to ensure proper drainage away from the
+                            home and prepare the yard for landscaping.
+                          </td>
+                          <td>15</td>
+                          <td>25 Days</td>
+                          <td class="">
+                            <a href="" class="pe-3 text-warning fs-4"
+                              ><i class="bi bi-pencil-square"></i
+                            ></a>
+                            <a href="" class="pe-3 text-danger fs-4"
+                              ><i class="bi bi-trash-fill"></i
+                            ></a>
+                          </td>
+                          <td class="">
+                            <button class="btn btn-warning btn-sm rounded-pill">
+                              Pending
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>
+                            Finish Mechanical Trims; Install Bathroom Fixtures
+                          </td>
+                          <td>
+                            Light fixtures, outlets and switches are installed
+                            and the electrical panel is completed. HVAC
+                            equipment is installed and registers completed.
+                            Sinks, toilets and faucets are put in place.
+                          </td>
+                          <td>8</td>
+                          <td>25 Days</td>
+                          <td class="">
+                            <a href="" class="pe-3 text-warning fs-4"
+                              ><i class="bi bi-pencil-square"></i
+                            ></a>
+                            <a href="" class="pe-3 text-danger fs-4"
+                              ><i class="bi bi-trash-fill"></i
+                            ></a>
+                          </td>
+                          <td class="">
+                            <button class="btn btn-warning btn-sm rounded-pill">
+                              Pending
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td>
+                            Install Mirrors, Shower Doors; Finish Flooring,
+                            Exterior Landscaping
+                          </td>
+                          <td>
+                            Mirrors, shower doors and carpeting are installed
+                            and final cleanup takes place. Trees, shrubs and
+                            grass are planted and other exterior landscaping
+                            completed.
+                          </td>
+                          <td>6</td>
+                          <td>15 Days</td>
+                          <td class="">
+                            <a href="" class="pe-3 text-warning fs-4"
+                              ><i class="bi bi-pencil-square"></i
+                            ></a>
+                            <a href="" class="pe-3 text-danger fs-4"
+                              ><i class="bi bi-trash-fill"></i
+                            ></a>
+                          </td>
+                          <td class="">
+                            <button class="btn btn-warning btn-sm rounded-pill">
+                              Pending
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td>Final Walk-Through</td>
+                          <td>
+                            This is where you spot items that need to be
+                            corrected or adjusted!
+                          </td>
+                          <td>3</td>
+                          <td>5 Days</td>
+                          <td class="">
+                            <a href="" class="pe-3 text-warning fs-4"
+                              ><i class="bi bi-pencil-square"></i
+                            ></a>
+                            <a href="" class="pe-3 text-danger fs-4"
+                              ><i class="bi bi-trash-fill"></i
+                            ></a>
+                          </td>
+                          <td class="">
+                            <button class="btn btn-warning btn-sm rounded-pill">
+                              Pending
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
+</html>

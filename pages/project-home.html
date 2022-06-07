@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="project-home-style.css"
+    />
+    <script src="main.js"></script>
+    <title>Project Home</title>
+    <style>
+      .card {
+        min-height: 50vh;
+        height: 55vh;
+        max-height: 70vh;
+      }
+
+      .dropdown-toggle:after {
+        content: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-auto bg-dark sticky-top">
+          <div
+            class="
+              d-flex
+              flex-sm-column flex-row flex-nowrap
+              bg-dark
+              align-items-center
+              sticky-top
+            "
+          >
+            <a
+              href="../index.html"
+              class="d-block p-3 link-dark text-decoration-none border-bottom"
+              title=""
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              data-bs-original-title="Company Logo/Home"
+            >
+              <!-- <h2 class="border border-warning rounded-pill p-2 text-warning">YF</h2> -->
+              <img
+                src="../images/log (1).png"
+                alt="hugenerd"
+                width="70"
+                height="70"
+                class="rounded-circle"
+              />
+            </a>
+            <ul
+              class="
+                nav nav-pills nav-flush
+                flex-sm-column flex-row flex-nowrap
+                mb-auto
+                mx-auto
+                text-center
+                justify-content-between
+                w-100
+                px-3
+                align-items-center
+              "
+            >
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Project Home"
+                >
+                  <i class="bi-house fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="project-dashboard.html"
+                  class="nav-link py-3 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Project Dashboard"
+                >
+                  <i class="bi-speedometer2 fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="project-schedule.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Schedule Management"
+                >
+                  <i class="bi bi-calendar2-check-fill fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="project-employee.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Employee Management"
+                >
+                  <i class="bi bi-person-lines-fill fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="project-material.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Material Management"
+                >
+                  <i class="bi-tools fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="project-budget.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Budget Management"
+                >
+                  <i class="bi bi-wallet-fill fs-2"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="project-document.html"
+                  class="nav-link py-2 px-2 text-light"
+                  title=""
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="Document Management"
+                >
+                  <i class="bi-files fs-2"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="dropdown">
+              <a
+                href="#"
+                class="
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  p-3
+                  link-light
+                  text-decoration-none
+                  dropdown-toggle
+                "
+                id="profile"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <!-- <i class="bi-person-circle fs-2"></i> -->
+                <img
+                  src="../images/yirgs.jpg"
+                  alt="hugenerd"
+                  width="50"
+                  height="50"
+                  class="rounded-circle"
+                  data-bs-toggle="tooltip"
+                  data-bs-original-title="Profile Details"
+                  data-bs-placement="right"
+                /><span class="badge bg-danger mb-5">2</span>
+              </a>
+              <ul
+                class="dropdown-menu text-small shadow bg-light"
+                aria-labelledby="profile"
+              >
+                <li>
+                  <a class="dropdown-item text-dark" href="#"
+                    ><i class="bi-file-plus-fill pe-3"></i>New project...</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-dark" href="#"
+                    ><i class="bi-bell-fill pe-3"></i>Notifications</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-dark" href="#"
+                    ><i class="bi-gear pe-3"></i>Settings</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-dark" href="#"
+                    ><i class="bi-person-square pe-3"></i>Profile</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider text-dark" />
+                </li>
+                <li>
+                  <a class="dropdown-item text-dark" href="login.html"
+                    ><i class="bi-box-arrow-in-left pe-3"></i>Sign out</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm p-3 min-vh-100">
+          <!-- content -->
+          <h3 class="text-primary text-capitalize">
+            Please Select a Template for your Residential Building
+          </h3>
+          <hr />
+
+          <!-- Start of Main Section or Products Section -->
+          <section class="p-5" id="products">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="card bg-dark border text-light mb-5 shadow">
+                    <img
+                      src="../images/appartment-building.jpg"
+                      class="card-img-top"
+                      alt="Card Image"
+                    />
+                    <div class="card-body text-center">
+                      <h3 class="card-title mb-3">Appartment Building</h3>
+                      <a
+                        href="../pages/project-detail.html"
+                        class="btn btn-warning"
+                        >Use Template</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="card bg-dark border text-light mb-5 shadow">
+                    <img
+                      src="../images/villa-building.jpg"
+                      class="card-img-top"
+                      alt="Card Image"
+                    />
+                    <div class="card-body text-center">
+                      <h3 class="card-title mb-3">Villa Home</h3>
+                      <a
+                        href="../pages/project-detail.html"
+                        class="btn btn-warning"
+                        >Use Template</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div
+                    class="card bg-dark border-primary text-light mb-5 shadow"
+                  >
+                    <img
+                      src="../images/single-family-home.jpg"
+                      class="card-img-top"
+                      alt="Card Image"
+                    />
+                    <div class="card-body text-center">
+                      <h3 class="card-title mb-3">Single-Family Home</h3>
+                      <a
+                        href="../pages/project-detail.html"
+                        class="btn btn-warning"
+                        >Use Template</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="card bg-dark border text-light mb-5 shadow">
+                    <img
+                      src="../images/multi-family-home.jpg"
+                      class="card-img-top"
+                      alt="Card Image"
+                    />
+                    <div class="card-body text-center">
+                      <h3 class="card-title mb-3">Multi-Family Home</h3>
+                      <a
+                        href="../pages/project-detail.html"
+                        class="btn btn-warning"
+                        >Use Template</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="card bg-dark border text-light mb-5 shadow">
+                    <img
+                      src="../images/condominium-building.jpg"
+                      class="card-img-top"
+                      alt="Card Image"
+                    />
+                    <div class="card-body text-center">
+                      <h3 class="card-title mb-3">Condominium Building</h3>
+                      <a
+                        href="../pages/project-detail.html"
+                        class="btn btn-warning"
+                        >Use Template</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="card bg-dark border text-light mb-5 shadow">
+                    <img
+                      src="../images/Bungalow-home.jpg"
+                      class="card-img-top"
+                      alt="Card Image"
+                    />
+                    <div class="card-body text-center">
+                      <h3 class="card-title mb-3">Bungalow House</h3>
+                      <a
+                        href="../pages/project-detail.html"
+                        class="btn btn-warning"
+                        >use Template</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="card bg-dark border text-light mb-5 shadow">
+                    <img
+                      src="../images/industrial.jpg"
+                      class="card-img-top"
+                      alt="Card Image"
+                    />
+                    <div class="card-body text-center">
+                      <h3 class="card-title mb-3">Industrial Building</h3>
+                      <a
+                        href="../pages/project-detail.html"
+                        class="btn btn-warning"
+                        >Use Template</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="card bg-dark border text-light mb-5 shadow">
+                    <img
+                      src="../images/storage.jpg"
+                      class="card-img-top"
+                      alt="Card Image"
+                    />
+                    <div class="card-body text-center">
+                      <h3 class="card-title mb-3">Storage Building</h3>
+                      <a
+                        href="../pages/project-detail.html"
+                        class="btn btn-warning"
+                        >Use Template</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
+</html>

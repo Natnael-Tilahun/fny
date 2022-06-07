@@ -1,0 +1,42 @@
+/* .header{
+    background-color:#07f7e3;
+} */
+
+.card {
+  min-height: 65vh;
+  max-height: 75vh;
+  overflow: none;
+  background-color: #07f7e3;
+}
+
+.card-img-top {
+  /* height:35vh; */
+}
+
+.btn:hover {
+  background-color: gold;
+  border: 2px solid white;
+}
+
+.nav-link:hover {
+  color: #ffc107;
+  cursor: pointer;
+  border-bottom: 2px solid #ffc107;
+}
+
+.dropdown-item:hover {
+  background: gray;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  margin-top: 0;
+}
+
+i {
+  width: 50vw;
+  cursor: pointer;
+}

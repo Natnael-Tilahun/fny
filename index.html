@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Start of Header Section -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand"><img src="images/log (1).png" href="#" class="rounded-pill w-25" /></a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center " id="navmenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item pe-2 dropdown">
+                            <a class="nav-link" id="whoweserve" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">WHO WE SERVE</a>
+                            <ul class="dropdown-menu bg-dark" aria-labelledby="whoweserve">
+                                <li><a class="dropdown-item text-light" href="#">For Home Builders </a></li>
+                                <li><a class="dropdown-item text-light" href="#">For Commercial Contractors </a></li>
+                                <li><a class="dropdown-item text-light" href="#">For Sub-Contractors </a></li>
+                                <li><a class="dropdown-item text-light" href="#">For Remodelers </a></li>
+                                <li><a class="dropdown-item text-light" href="#">For Owners </a></li>
+                                <li><a class="dropdown-item text-light" href="#">For General contractors </a></li>
+                                <li><a class="dropdown-item text-light" href="#">For Speciality Contractors </a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item pe-2">
+                            <a class="nav-link">RESOURCES</a>
+                        </li>
+                        <li class="nav-item pe-2 dropdown">
+                            <a class="nav-link" id="features" role="botton" data-bs-toggle="dropdown"
+                                aria-expanded="false">FEATURES</a>
+                            <ul class="dropdown-menu bg-dark" aria-labelledby="features">
+                                <li><a class="dropdown-item text-light" href="#">Schedule Management</a></li>
+                                <li><a class="dropdown-item text-light" href="#">Employee Management</a></li>
+                                <li><a class="dropdown-item text-light" href="#">Material Management</a></li>
+                                <li><a class="dropdown-item text-light" href="#">Document Management</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item pe-2">
+                            <a class="nav-link" href="#partners">PARTNERS</a>
+                        </li>
+                        <li class="nav-item pe-2">
+                            <a class="nav-link">PRICING</a>
+                        </li>
+                        <li class="nav-item pe-2 ">
+                            <a class="nav-link" href="#company" id="">COMPANY</a>
+                            <!-- <ul class="dropdown-menu bg-dark" aria-labelledby="company">
+                            <li><a class="dropdown-item text-light" href="#">Vision</a></li>
+                            <li><a class="dropdown-item text-light" href="#">About us</a></li>
+                            <li><a class="dropdown-item text-light" href="#">Careers</a></li>
+                            <li><a class="dropdown-item text-light" href="#">Support</a></li>
+                            <li><a class="dropdown-item text-light" href="#">Contact Us</a></li>
+                        </ul> -->
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="pages/login.html" class="btn btn-dark text-light mx-3 border-light">Login</a>
+                    <a href="pages/signup.html" class="btn btn-warning btn-lg ">Try Free</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Start of Page Banner -->
+        <section class="bg-image text-light text-center justify-content-center"
+            style="background-image:linear-gradient(rgba(50,60,90,0.9),rgba(50,60,90,0.6)),url('images/urban-building-construction.jpg'); min-height:70vh;background-repeat:no-repeat;  background-position:center ">
+            <div class="container p-5  justify-content-center align-item-center">
+                <!-- <div class="d-sm-flex"> -->
+                <h1 class="pt-5">The first full scope <span class="text-warning fs-bolder">Construction Management
+                        Tools</span></h1>
+                <p class="lead py-3 fs-4 text-light">Full access for 30 days, start fast with templates, expert support
+                    and training</p>
+                <a href="pages/signup.html" class="btn btn-warning btn-lg border-dark m-2 tryfree-btn">TRY FOR FREE</a>
+                <a href="" class="btn btn-lg border-dark text-dark m-2 watch-btn btn-light">WATCH VIDEO</a>
+
+                <!-- <image class="img-fluid w-70" src="images/construction1.jpg" alt=""/> -->
+                <!-- </div> -->
+            </div>
+        </section>
+    </header>
+
+    <!-- Start of Main Section or Products Section -->
+    <section class="p-5" id="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card bg-dark border text-light mb-5 shadow">
+                        <img src="images/condominium.jpg" class="card-img-top" alt="Card Image" />
+                        <div class="card-body text-center">
+                            <h3 class="card-title mb-3">Residential Building</h3>
+                            <p class="card-text">For general residential purposes</p>
+                            <a href="./pages/project-home.html" class="btn btn-warning">See More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card bg-dark border text-light mb-5 shadow">
+                        <img src="images/educational.jpg" class="card-img-top" alt="Card Image" />
+                        <div class="card-body text-center">
+                            <h3 class="card-title mb-3">Educational Building</h3>
+                            <p class="card-text">For education or recreation </p>
+                            <a href="./pages/signup.html" class="btn btn-warning">See More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card bg-dark border-primary text-light mb-5 shadow">
+                        <img src="images/institutional.jpg" class="card-img-top" alt="Card Image" />
+                        <div class="card-body text-center">
+                            <h3 class="card-title mb-3">Institutional Building</h3>
+                            <p class="card-text">For medical or other treatments </p>
+                            <a href="./pages/signup.html" class="btn btn-warning">See More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                    <div class="card bg-dark border text-light mb-5 shadow">
+                        <img src="images/assembly.jpg" class="card-img-top" alt="Card Image" />
+                        <div class="card-body text-center">
+                            <h3 class="card-title mb-3">Assembly Building</h3>
+                            <p class="card-text">For entertainment,recreation,etc</p>
+                            <a href="pages/signup.html" class="btn btn-warning">See More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card bg-dark border text-light mb-5 shadow">
+                        <img src="images/business2.jpg" class="card-img-top" alt="Card Image" />
+                        <div class="card-body text-center">
+                            <h3 class="card-title mb-3">Business Building</h3>
+                            <p class="card-text">For transaction of business</p>
+                            <a href="pages/signup.html" class="btn btn-warning">See More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card bg-dark border text-light mb-5 shadow">
+                        <img src="images/merchantile.jpg" class="card-img-top" alt="Card Image" />
+                        <div class="card-body text-center">
+                            <h3 class="card-title mb-3">Merchantile Building</h3>
+                            <p class="card-text">For display and sale of goods</p>
+                            <a href="pages/signup.html" class="btn btn-warning">See More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card bg-dark border text-light mb-5 shadow">
+                        <img src="images/industrial.jpg" class="card-img-top" alt="Card Image" />
+                        <div class="card-body text-center">
+                            <h3 class="card-title mb-3">Industrial Building</h3>
+                            <p class="card-text">For industrial use</p>
+                            <a href="pages/signup.html" class="btn btn-warning">See More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card bg-dark border text-light mb-5 shadow">
+                        <img src="images/storage.jpg" class="card-img-top" alt="Card Image" />
+                        <div class="card-body text-center">
+                            <h3 class="card-title mb-3">Storage Building</h3>
+                            <p class="card-text">For storing the products</p>
+                            <a href="pages/signup.html" class="btn btn-warning">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card bg-dark border text-light mb-5 shadow">
+                        <img src="images/dangerous2.jpg" class="card-img-top" alt="Card Image" />
+                        <div class="card-body text-center">
+                            <h3 class="card-title mb-3">Dangerous Building</h3>
+                            <p class="card-text">For handling and manufacture harmful products</p>
+                            <a href="pages/signup.html" class="btn btn-warning">See More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card bg-dark border text-light mb-5 shadow">
+                        <img src="images/slum.jpg" class="card-img-top" alt="Card Image" />
+                        <div class="card-body text-center">
+                            <h3 class="card-title mb-3">Slum Building</h3>
+                            <p class="card-text">For slum people accommodation</p>
+                            <a href="pages/signup.html" class="btn btn-warning">See More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card bg-dark border text-light mb-5 shadow">
+                        <img src="images/special.jpg" class="card-img-top" alt="Card Image" />
+                        <div class="card-body text-center">
+                            <h3 class="card-title mb-3">Special Building</h3>
+                            <p class="card-text">For wholesale establishments and industries</p>
+                            <a href="pages/signup.html" class="btn btn-warning">See More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card bg-dark border text-light mb-5 shadow">
+                        <img src="images/multilevelcarparking.jpg" class="card-img-top" alt="Card Image" />
+                        <div class="card-body text-center">
+                            <h3 class="card-title mb-3">Multi-level car parking Building</h3>
+                            <p class="card-text">For car parking</p>
+                            <a href="pages/signup.html" class="btn btn-warning">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start of Partners Section -->
+    <section class="bg-warning p-5 text-dark" id="partners">
+        <div class="container justify-content-center justify-align-center">
+            <h1 class="text-center">Our <span class="fs-1 text-light">Clients & Partners</span></h1>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row py-5">
+                                    <div class="col-md-4 px-5">
+                                        <img class="card-img-top rounded-pill" src="images/surconstruction.jpg"
+                                            alt="card image" />
+                                        <h4 class="card-title text-center pt-2">Sur Construction</h4>
+                                    </div>
+
+                                    <div class="col-md-4 px-5">
+                                        <img class="card-img-top rounded-pill" src="images/midroc2.jpg"
+                                            alt="card image" />
+                                        <h4 class="card-title text-center pt-2">MIDROC Ethiopia Construction</h4>
+                                    </div>
+
+                                    <div class="col-md-4 px-5">
+                                        <img class="card-img-top rounded-pill" src="images/sunshine.png"
+                                            alt="card image" />
+                                        <h4 class="card-title text-center pt-2">Sunshine Construction</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row py-5">
+                                    <div class="col-md-4 px-5">
+                                        <img class="card-img-top rounded-pill" src="images/saba.png" alt="card image" />
+                                        <h4 class="card-title text-center pt-2">Saba Engineering</h4>
+                                    </div>
+
+                                    <div class="col-md-4 px-5">
+                                        <img class="card-img-top rounded-pill" src="images/rama.jpg" alt="card image" />
+                                        <h4 class="card-title text-center pt-2">Rama Construction</h4>
+                                    </div>
+
+                                    <div class="col-md-4 px-5">
+                                        <img class="card-img-top rounded-pill" src="images/tlc.jpg" alt="card image" />
+                                        <h4 class="card-title text-center pt-2">Tesfaye Legesse Construction</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row py-5">
+                                    <div class="col-md-4 px-5">
+                                        <img class="card-img-top rounded-pill" src="images/gfc.jpg" alt="card image" />
+                                        <h4 class="card-title text-center pt-2">Gutema Firisa Construction</h4>
+                                    </div>
+
+                                    <div class="col-md-4 px-5">
+                                        <img class="card-img-top rounded-pill" src="images/afro.png" alt="card image" />
+                                        <h4 class="card-title text-center pt-2">Afro-Tsion Construction</h4>
+                                    </div>
+
+                                    <div class="col-md-4 px-5">
+                                        <img class="card-img-top rounded-pill" src="images/tacon.png"
+                                            alt="card image" />
+                                        <h4 class="card-title text-center pt-2">Tekleberhan Ambaye Construction (TACON)
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row py-5">
+                                    <div class="col-md-4 px-5">
+                                        <img class="card-img-top rounded-pill" src="images/elkanah.jpg"
+                                            alt="card image" />
+                                        <h4 class="card-title text-center pt-2">Elkanah Trading PLC (ETP)</h4>
+                                    </div>
+
+                                    <div class="col-md-4 px-5">
+                                        <img class="card-img-top rounded-pill" src="images/steely.jpg"
+                                            alt="card image" />
+                                        <h4 class="card-title text-center pt-2">Steely RMI PLC</h4>
+                                    </div>
+
+                                    <div class="col-md-4 px-5">
+                                        <img class="card-img-top rounded-pill" src="images/messebo.jpg"
+                                            alt="card image" />
+                                        <h4 class="card-title text-center pt-2">Messebo Cement Factory Plc </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Start of Footer Section -->
+    <footer class="bg-dark p-5 text-light  text-start position-relative" id="company">
+        <div class="container ">
+            <div class="row">
+                <div class="col col-xs-6">
+                    <h class="border-bottom">WHO WE SERVE</h>
+                    <a class="nav-link text-secondary" href="#">For Home Builders </a>
+                    <a class="nav-link text-secondary" href="#">For Commercial Contractors </a>
+                    <a class="nav-link text-secondary" href="#">For Sub-Contractors </a>
+                    <a class="nav-link text-secondary" href="#">For Remodelers </a>
+                    <a class="nav-link text-secondary" href="#">For Owners </a>
+                    <a class="nav-link text-secondary" href="#">For General contractors </a>
+                    <a class="nav-link text-secondary" href="#">For Speciality Contractors </a>
+
+                </div>
+                <div class="col col-xs-6">
+                    <h class="border-bottom">FEATURES</h>
+                    <a class="nav-link text-secondary" href="#">Schedule Management</a>
+                    <a class="nav-link text-secondary" href="#">Employee Management</a>
+                    <a class="nav-link text-secondary" href="#">Material Management</a>
+                    <a class="nav-link text-secondary" href="#">Document Management</a>
+                    <a class="nav-link text-secondary" href="#">Advertise your company </a>
+                </div>
+                <div class="col col-xs-6">
+                    <h class="border-bottom border-light ">RESOURCES</h>
+                    <a class="nav-link text-secondary">Latest News & Events</a>
+                    <a class="nav-link text-secondary">Blogs</a>
+                    <a class="nav-link text-secondary">Learning centers</a>
+                    <a class="nav-link text-secondary">Webinars</a>
+                </div>
+                <div class="col col-xs-6">
+                    <h class="border-bottom">COMPANY</h>
+                    <a class="nav-link text-secondary">Vision</a>
+                    <a class="nav-link text-secondary">About us</a>
+                    <a class="nav-link text-secondary">Support</a>
+                    <a class="nav-link text-secondary" href="#">Advertise </a>
+                    <a class="nav-link text-secondary">Careers</a>
+                    <a class="nav-link text-secondary">Privacy Policy</a>
+                    <a class="nav-link text-secondary">Terms of Use</a>
+                    <a class="nav-link text-secondary">Contact</a>
+                    <i class="bi-facebook text-primary p-2"></i>
+                    <i class="bi-telegram text-warning p-2"></i>
+                    <i class="bi-youtube text-danger p-2"></i>
+                </div>
+            </div>
+            <p class="lead text-center">&copy 2021. All right reserved.</p>
+            <a class="position-absolute bottom-0 end-0 p-5" href="#"><i class="bi bi-arrow-up-circle h1"></i></a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
